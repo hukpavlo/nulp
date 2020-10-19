@@ -2,7 +2,7 @@ package lab1;
 
 public class BubbleSort extends Sort {
   public static void main(String[] args) {
-    new BigLettersNumberSort().init(10).sort().printResult();
+    new BubbleSort().init(10).sort().printResult();
   }
 
   public BubbleSort sort() {
