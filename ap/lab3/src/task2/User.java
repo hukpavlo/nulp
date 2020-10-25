@@ -23,7 +23,7 @@ public class User {
 
     public static void main(String[] args) {
         new User(
-                "Pavlo",
+                "",
                 "",
                 "pavlo.huk@gmail.com",
                 19,
