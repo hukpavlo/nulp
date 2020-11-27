@@ -5,14 +5,14 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.4.0</version>
+        <version>2.3.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>lab4</groupId>
-    <artifactId>lab4</artifactId>
+    <artifactId>cinema</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>lab4</name>
-    <description>lab4</description>
+    <name>cinema</name>
+    <description>cinema</description>
 
     <properties>
         <java.version>11</java.version>
@@ -28,7 +28,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.FINAL</version>
+        </dependency>
+
     </dependencies>
 
     <build>
